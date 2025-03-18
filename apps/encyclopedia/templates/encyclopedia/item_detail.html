@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ item.name }}</title>
+</head>
+<body>
+    <h1>{{ item.name }}</h1>
+    <p><strong>Категория:</strong> {{ item.category }}</p>
+    <p>{{ item.description }}</p>
+
+    {% if item.image %}
+        <img src="{{ item.image.url }}" alt="{{ item.name }}" width="300">
+    {% endif %}
+
+    {% if item.video_url %}
+        <p><a href="{{ item.video_url }}" target="_blank">Смотреть видео</a></p>
+    {% endif %}
+
+    <a href="/">Назад к каталогу</a>
+</body>
+</html>
