@@ -1,10 +1,6 @@
 # config/settings/dev.py
 
-from .base import *
-
-DEBUG = True
-ALLOWED_HOSTS = []
-
+x
 # Можно переопределить настройки базы данных для разработки, если нужно:
 # DATABASES = {
 #     "default": {

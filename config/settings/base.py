@@ -1,9 +1,13 @@
 
 import os
 from pathlib import Path
-from ..jazzmin import JAZZMIN_SETTINGS, JAZZMIN_UI_TWEAKS
+from .jazzmin import JAZZMIN_SETTINGS, JAZZMIN_UI_TWEAKS
 
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
+
+ALLOWED_HOSTS = ["localhost", "127.0.0.1"] 
+
+DEBUG = True
 
 SECRET_KEY = "django-insecure-o**m^pjx&#lou-%v=2-z=-58%p%$mn-szstd(c()du10ra4oe&"
 
